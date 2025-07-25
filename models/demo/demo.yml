@@ -22,6 +22,8 @@ models:
     description: "DBT model for the customer view"
   - name: sales
     description: :DBT Model for the sales table"
+  - name: purchase
+    description: "DBT Model for the purchase tab"
    
 sources:
   - name: employee
@@ -39,3 +41,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: SALES_SRC
+  - name: purchase
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PURCHASE_SRC
